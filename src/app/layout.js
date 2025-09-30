@@ -1,5 +1,6 @@
 import { Quicksand } from "next/font/google";
 import "./globals.css";
+import BackgroundAudio from "@/components/BackgroundAudio";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${quicksand.className} antialiased select-none`}
       >
+        <BackgroundAudio />
         {children}
       </body>
     </html>
